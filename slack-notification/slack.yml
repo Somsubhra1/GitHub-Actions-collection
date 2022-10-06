@@ -1,0 +1,6 @@
+- name: Notify slack
+  env:
+    SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+  uses: Bihan001/GitHub-Actions-collection@master
+  with:
+    args: '{\"channel\":\"C1234567890\",\"text\":\"Hello world\"}'
